@@ -23,4 +23,8 @@ public class UserService {
     public List<Role> listRoles(){
         return (List<Role>) roleRepository.findAll();
     };
+
+    public void save(User user){
+        userRepository.save(user);
+    }
 }
